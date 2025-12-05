@@ -24,7 +24,7 @@ export function LinkCard({ icon, label, href, description }: LinkCardProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="card-hover group flex flex-col items-center justify-center aspect-square rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:bg-card/50"
+      className="card-hover group flex flex-col items-center justify-center py-8 px-10 rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:bg-card/50"
     >
       <Icon className="w-16 h-16 text-muted-foreground group-hover:text-primary transition-colors duration-300 mb-4" />
       <span className="font-medium text-foreground group-hover:text-primary transition-colors duration-300">
