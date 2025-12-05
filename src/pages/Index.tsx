@@ -4,14 +4,6 @@ import { ProjectCarousel } from "@/components/ProjectCarousel";
 import { Footer } from "@/components/Footer";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
 
-// Card images
-import cardGithub from "@/assets/card-github.png";
-import cardLinkedin from "@/assets/card-linkedin.png";
-import cardPortfolio from "@/assets/card-portfolio.png";
-import cardNewsletter from "@/assets/card-newsletter.png";
-import cardInstagram from "@/assets/card-instagram.png";
-import cardEmail from "@/assets/card-email.png";
-
 // Project images
 import project01 from "@/assets/project-01.png";
 import project02 from "@/assets/project-02.png";
@@ -19,37 +11,37 @@ import project03 from "@/assets/project-03.png";
 
 const links = [
   {
-    image: cardGithub,
+    icon: "github",
     label: "GitHub",
     href: "https://github.com/josemarcos",
     description: "Código aberto",
   },
   {
-    image: cardLinkedin,
+    icon: "linkedin",
     label: "LinkedIn",
     href: "https://linkedin.com/in/josemarcos",
     description: "Conecte-se",
   },
   {
-    image: cardPortfolio,
+    icon: "portfolio",
     label: "Portfólio",
     href: "https://josemarcos.com",
     description: "Trabalhos",
   },
   {
-    image: cardNewsletter,
+    icon: "newsletter",
     label: "Newsletter",
     href: "https://newsletter.josemarcos.com",
     description: "Assine",
   },
   {
-    image: cardInstagram,
+    icon: "instagram",
     label: "Instagram",
     href: "https://instagram.com/josemarcos",
     description: "Fotos",
   },
   {
-    image: cardEmail,
+    icon: "email",
     label: "Email",
     href: "mailto:contato@josemarcos.com",
     description: "Fale comigo",
