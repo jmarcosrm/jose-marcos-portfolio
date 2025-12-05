@@ -2,7 +2,6 @@ import { Hero } from "@/components/Hero";
 import { LinkCard } from "@/components/LinkCard";
 import { ProjectCarousel } from "@/components/ProjectCarousel";
 import { Footer } from "@/components/Footer";
-import { AnimatedBackground } from "@/components/AnimatedBackground";
 
 // Project images
 import project01 from "@/assets/project-01.png";
@@ -73,7 +72,6 @@ const Index = () => {
 
       {/* Links Section */}
       <section className="section-spacing relative overflow-hidden">
-        <AnimatedBackground />
         <div className="container relative z-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {links.map((link, index) => (
