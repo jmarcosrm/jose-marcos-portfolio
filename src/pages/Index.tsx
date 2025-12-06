@@ -1,5 +1,5 @@
 import { Hero } from "@/components/Hero";
-import { LinkCard } from "@/components/LinkCard";
+import { LinkCarousel } from "@/components/LinkCarousel";
 import { ProjectCarousel } from "@/components/ProjectCarousel";
 import { Footer } from "@/components/Footer";
 
@@ -82,19 +82,7 @@ const Index = () => {
 
       {/* Links Section */}
       <section className="section-spacing relative overflow-hidden border-t border-border/50">
-        <div className="container relative z-20">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {links.map((link, index) => (
-              <div
-                key={link.label}
-                className="animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: "forwards", opacity: 0 }}
-              >
-                <LinkCard {...link} />
-              </div>
-            ))}
-          </div>
-        </div>
+        <LinkCarousel links={links} />
       </section>
 
       <Footer />
