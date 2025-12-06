@@ -94,9 +94,7 @@ const Index = () => {
             Projetos
           </h2>
         </div>
-        <div className="pl-6 md:pl-[calc((100vw-1200px)/2+1.5rem)]">
-          <ProjectCarousel projects={projects} />
-        </div>
+        <ProjectCarousel projects={projects} />
       </section>
 
       <Footer />
