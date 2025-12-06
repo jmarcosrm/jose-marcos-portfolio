@@ -14,9 +14,6 @@ interface LinkCarouselProps {
 }
 
 export function LinkCarousel({ links }: LinkCarouselProps) {
-  // Duplicate links for seamless infinite loop
-  const duplicatedLinks = [...links, ...links, ...links];
-
   const [emblaRef] = useEmblaCarousel(
     {
       loop: true,
@@ -35,10 +32,10 @@ export function LinkCarousel({ links }: LinkCarouselProps) {
 
   return (
     <div className="overflow-hidden" ref={emblaRef}>
-      <div className="flex">
-        {duplicatedLinks.map((link, index) => (
+      <div className="flex justify-center">
+        {links.map((link) => (
           <div
-            key={`${link.label}-${index}`}
+            key={link.label}
             className="flex-shrink-0 px-6"
           >
             <LinkCard {...link} />
