@@ -70,8 +70,18 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Hero />
 
+      {/* Projects Section */}
+      <section className="section-spacing overflow-hidden">
+        <div className="container">
+          <h2 className="font-heading text-2xl md:text-3xl font-semibold text-foreground mb-10 animate-fade-up">
+            Projetos
+          </h2>
+        </div>
+        <ProjectCarousel projects={projects} />
+      </section>
+
       {/* Links Section */}
-      <section className="section-spacing relative overflow-hidden">
+      <section className="section-spacing relative overflow-hidden border-t border-border/50">
         <div className="container relative z-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {links.map((link, index) => (
@@ -85,16 +95,6 @@ const Index = () => {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Projects Section */}
-      <section className="section-spacing border-t border-border/50 overflow-hidden">
-        <div className="container">
-          <h2 className="font-heading text-2xl md:text-3xl font-semibold text-foreground mb-10 animate-fade-up">
-            Projetos
-          </h2>
-        </div>
-        <ProjectCarousel projects={projects} />
       </section>
 
       <Footer />
