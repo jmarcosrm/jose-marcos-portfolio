@@ -83,7 +83,7 @@ const Index = () => {
       {/* Links Section */}
       <section className="section-spacing relative border-t border-border/50">
         <div className="container">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-10">
+          <div className="flex justify-center gap-2 sm:gap-4 md:gap-8 lg:gap-10">
             {links.map((link) => (
               <LinkCard key={link.label} {...link} />
             ))}
