@@ -24,10 +24,10 @@ export function LinkCard({ icon, label, href, description }: LinkCardProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex flex-col items-center justify-center py-6 transition-all duration-300"
+      className="group flex flex-col items-center justify-center py-4 sm:py-6 transition-all duration-300"
     >
-      <Icon className="w-16 h-16 text-muted-foreground group-hover:text-primary transition-colors duration-300 mb-4" />
-      <span className="font-medium text-foreground group-hover:text-primary transition-colors duration-300">
+      <Icon className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 text-muted-foreground group-hover:text-primary transition-colors duration-300 mb-2 sm:mb-4" />
+      <span className="font-medium text-xs sm:text-sm md:text-base text-foreground group-hover:text-primary transition-colors duration-300">
         {label}
       </span>
       {description && (
