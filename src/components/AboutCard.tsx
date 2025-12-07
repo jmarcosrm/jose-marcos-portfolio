@@ -12,7 +12,7 @@ export function AboutCard() {
       <div className="container">
         <div className="relative group">
           {/* Animated gradient border */}
-          <div className="absolute -inset-[1px] bg-gradient-to-r from-primary via-purple-500 to-pink-500 rounded-3xl opacity-75 blur-sm group-hover:opacity-100 group-hover:blur-md transition-all duration-500 animate-pulse" />
+          <div className="absolute -inset-[1px] bg-gradient-to-r from-primary via-orange-400 to-foreground/30 rounded-3xl opacity-75 blur-sm group-hover:opacity-100 group-hover:blur-md transition-all duration-500 animate-pulse" />
           
           {/* Card content */}
           <div className="relative bg-background/95 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-border/50">
