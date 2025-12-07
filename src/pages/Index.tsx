@@ -1,5 +1,5 @@
 import { Hero } from "@/components/Hero";
-import { LinkCarousel } from "@/components/LinkCarousel";
+import { LinkCard } from "@/components/LinkCard";
 import { ProjectCarousel } from "@/components/ProjectCarousel";
 import { Footer } from "@/components/Footer";
 
@@ -81,8 +81,14 @@ const Index = () => {
       </section>
 
       {/* Links Section */}
-      <section className="section-spacing relative overflow-hidden border-t border-border/50">
-        <LinkCarousel links={links} />
+      <section className="section-spacing relative border-t border-border/50">
+        <div className="container">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-10">
+            {links.map((link) => (
+              <LinkCard key={link.label} {...link} />
+            ))}
+          </div>
+        </div>
       </section>
 
       <Footer />
