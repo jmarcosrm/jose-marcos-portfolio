@@ -1,8 +1,8 @@
 import { Hero } from "@/components/Hero";
+import { AboutCard } from "@/components/AboutCard";
 import { LinkCard } from "@/components/LinkCard";
 import { ProjectCarousel } from "@/components/ProjectCarousel";
 import { Footer } from "@/components/Footer";
-
 // Project images
 import project01 from "@/assets/project-01.png";
 import project02 from "@/assets/project-02.png";
@@ -48,6 +48,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Hero />
+
+      {/* About Section */}
+      <AboutCard />
 
       {/* Projects Section */}
       <section className="section-spacing overflow-hidden">
