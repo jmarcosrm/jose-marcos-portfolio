@@ -1,12 +1,9 @@
-import { Github, Linkedin, Globe, Mail, Instagram, Newspaper, LucideIcon } from "lucide-react";
+import { Linkedin, Instagram, MessageCircle, Globe, LucideIcon } from "lucide-react";
 
 const iconMap: Record<string, LucideIcon> = {
-  github: Github,
   linkedin: Linkedin,
-  portfolio: Globe,
-  newsletter: Newspaper,
   instagram: Instagram,
-  email: Mail,
+  whatsapp: MessageCircle,
 };
 
 interface LinkCardProps {

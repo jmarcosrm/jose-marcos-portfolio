@@ -10,40 +10,19 @@ import project03 from "@/assets/project-03.png";
 
 const links = [
   {
-    icon: "github",
-    label: "GitHub",
-    href: "https://github.com/josemarcos",
-    description: "Código aberto",
-  },
-  {
     icon: "linkedin",
     label: "LinkedIn",
     href: "https://linkedin.com/in/josemarcos",
-    description: "Conecte-se",
-  },
-  {
-    icon: "portfolio",
-    label: "Portfólio",
-    href: "https://josemarcos.com",
-    description: "Trabalhos",
-  },
-  {
-    icon: "newsletter",
-    label: "Newsletter",
-    href: "https://newsletter.josemarcos.com",
-    description: "Assine",
   },
   {
     icon: "instagram",
     label: "Instagram",
     href: "https://instagram.com/josemarcos",
-    description: "Fotos",
   },
   {
-    icon: "email",
-    label: "Email",
-    href: "mailto:contato@josemarcos.com",
-    description: "Fale comigo",
+    icon: "whatsapp",
+    label: "WhatsApp",
+    href: "https://wa.me/5500000000000",
   },
 ];
 
